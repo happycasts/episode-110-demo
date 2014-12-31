@@ -1,0 +1,54 @@
+@import "globals/variables";
+@import "globals/mixins";
+
+// header
+.header {
+  text-shadow: 0 1px 0 white;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #F3F3F3;
+  height: 40px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.header-logo-wordmark {
+  float: left;
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  &:hover {
+    color: $link-green;
+    text-decoration: none;
+  }
+}
+
+#user-links {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+  .name {
+     font-weight: bold;
+     white-space: nowrap;
+  }
+  a {
+    display: block;
+    padding: 12px 5px 10px;
+    color: #777;
+    line-height: 16px;
+    &:hover {
+      text-decoration: none;
+      color: $link-green;
+    }
+  }
+}
+
+

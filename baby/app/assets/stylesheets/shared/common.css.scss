@@ -1,0 +1,61 @@
+@import "globals/variables";
+@import "globals/mixins";
+
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei",微软雅黑,"SimSun",Arial,Lucida Grande,Tahoma,sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: $link-green;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+}
+.single-form-container {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.flash-notice {
+  margin-bottom: 5px;
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding: 5px;
+}
+.flash-alert {
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  color: #c09853;
+  padding: 5px;
+}
+
+.flash-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  padding: 5px;
+}
+
+.welcome {
+  font-size: 300%;
+  color: #3a87ad;
+  text-align: center;
+  margin-top: 200px;
+}
+* {
+  box-sizing: border-box;
+}
